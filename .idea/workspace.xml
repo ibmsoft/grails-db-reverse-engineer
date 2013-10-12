@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dd8008b-6537-4f22-8299-48e0abcff9a3" name="Default" comment="" />
+    <list default="true" id="5dd8008b-6537-4f22-8299-48e0abcff9a3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="grails-db-reverse-engineer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/Dummy.txt" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562971650" ignored="false" />
+    <file path="/Dummy.txt" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381563148580" ignored="false" />
     <file path="/BuildConfig.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381496503495" ignored="false" />
     <file path="/db2domain.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381497185916" ignored="false" />
-    <file path="/a.dummy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562968969" ignored="false" />
+    <file path="/a.dummy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381563146965" ignored="false" />
     <file path="/DbunitDatabaseTemplateGenerator.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562368991" ignored="false" />
     <file path="/Db2domain.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381560543565" ignored="false" />
     <file path="/Domain.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562392828" ignored="false" />
@@ -23,6 +26,7 @@
     <file path="/InstallDomainTemplate.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562045732" ignored="false" />
     <file path="$PROJECT_DIR$/../SLOA/src/templates/scaffolding/Domain.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562066436" ignored="false" />
     <file path="$PROJECT_DIR$/target/resources/web.xml" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562425709" ignored="false" />
+    <file path="/.gitignore" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381563111853" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/scripts/db2domain.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/web-app/Readme.txt" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
@@ -148,6 +151,7 @@
         <option value="$PROJECT_DIR$/src/templates/scaffolding/Domain.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/pansoft/Pan_uss_users.groovy" />
         <option value="$PROJECT_DIR$/Readme.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -200,20 +204,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="grails-db-reverse-engineer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-db-reverse-engineer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-db-reverse-engineer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,13 +496,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.grails/ivy-cache/org.hibernate/hibernate-tools/jars/hibernate-tools-3.6.0.CR1.jar!/org/hibernate/cfg/reveng/ReverseEngineeringSettings.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="51" selection-start="891" selection-end="891" vertical-scroll-proportion="-0.18892509">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/grails/plugin/reveng/Reenigne.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="108" column="68" selection-start="3275" selection-end="3275" vertical-scroll-proportion="0.41875">
@@ -553,13 +536,6 @@
     <entry file="file://$PROJECT_DIR$/grails-db-reverse-engineer.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="39" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.041543026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="158" selection-end="158" vertical-scroll-proportion="0.24">
           <folding />
         </state>
       </provider>
@@ -622,6 +598,20 @@
     <entry file="file://$PROJECT_DIR$/Readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="7" selection-start="219" selection-end="219" vertical-scroll-proportion="0.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="30" selection-start="158" selection-end="158" vertical-scroll-proportion="0.24">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="98" selection-end="98" vertical-scroll-proportion="0.28">
           <folding />
         </state>
       </provider>
