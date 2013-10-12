@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dd8008b-6537-4f22-8299-48e0abcff9a3" name="Default" comment="">
-      <change type="DELETED" beforePath="G:\others\grails-db-reverse-engineer\grails-app\domain\Pan_uss_users.groovy" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DbReverseEngineerGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/DbReverseEngineerGrailsPlugin.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/grails/plugin/reveng/DbunitDatabaseTemplateGenerator.groovy" afterPath="$PROJECT_DIR$/src/groovy/grails/plugin/reveng/DbunitDatabaseTemplateGenerator.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/scaffolding/Domain.groovy" afterPath="$PROJECT_DIR$/src/templates/scaffolding/Domain.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/InstallDomainTemplate.groovy" afterPath="$PROJECT_DIR$/scripts/InstallDomainTemplate.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Readme.txt" afterPath="$PROJECT_DIR$/Readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="5dd8008b-6537-4f22-8299-48e0abcff9a3" name="Default" comment="" />
     <ignored path="grails-db-reverse-engineer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/Dummy.txt" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562575348" ignored="false" />
+    <file path="/Dummy.txt" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562971650" ignored="false" />
     <file path="/BuildConfig.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381496503495" ignored="false" />
     <file path="/db2domain.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381497185916" ignored="false" />
-    <file path="/a.dummy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562571791" ignored="false" />
+    <file path="/a.dummy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562968969" ignored="false" />
     <file path="/DbunitDatabaseTemplateGenerator.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562368991" ignored="false" />
     <file path="/Db2domain.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381560543565" ignored="false" />
     <file path="/Domain.groovy" changelist="5dd8008b-6537-4f22-8299-48e0abcff9a3" time="1381562392828" ignored="false" />
@@ -223,34 +214,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-db-reverse-engineer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-db-reverse-engineer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-db-reverse-engineer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-db-reverse-engineer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
