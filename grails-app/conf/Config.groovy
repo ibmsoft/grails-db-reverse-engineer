@@ -5,4 +5,4 @@ grails.views.default.codec="none" // none, html, base64
 grails.views.gsp.encoding="UTF-8"
 
 grails.plugin.reveng.includeTables = ['PAN_USS_USERS']
-grails.plugin.reveng.packageName = com.pansoft
+grails.plugin.reveng.packageName = 'com.pansoft'

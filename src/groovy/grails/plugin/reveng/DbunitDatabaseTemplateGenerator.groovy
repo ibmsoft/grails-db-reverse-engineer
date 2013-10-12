@@ -150,12 +150,12 @@ class DbunitDatabaseTemplateGenerator extends DefaultGrailsTemplateGenerator {
 //                pkg = fullName[0..pos]
 //            }
 
-            def destFile = new File("${destdir}/grails-app/domain/${pkg?.replaceAll(".","/")}/${tableMetaData.tableName[0] + tableMetaData.tableName[1..-1].toLowerCase()}.groovy")
+            def destFile = new File("${destdir}/grails-app/domain/${pkg?.replaceAll("\\.","/")}/${tableMetaData.tableName[0] + tableMetaData.tableName[1..-1].toLowerCase()}.groovy")
             if (canWrite(destFile)) {
                 destFile.parentFile.mkdirs()
 
                 destFile.withWriter {w ->
-                    generateDomain(columnsLength,tableMetaData, w)
+                    generateDomain(columnsLength,pkg,tableMetaData, w)
                 }
 
                 Dbunitlog.info("Domain generated at ${destFile}")
@@ -163,7 +163,7 @@ class DbunitDatabaseTemplateGenerator extends DefaultGrailsTemplateGenerator {
         }
     }
 
-    public void generateDomain(def columnsLength,ITableMetaData tableMetaData, Writer out) {
+    public void generateDomain(def columnsLength,def pkg,ITableMetaData tableMetaData, Writer out) {
         def templateText = getTemplateText("Domain.groovy")
         def binding = [
                 tableName: tableMetaData.tableName[0] + tableMetaData.tableName[1..-1].toLowerCase(),
@@ -172,6 +172,7 @@ class DbunitDatabaseTemplateGenerator extends DefaultGrailsTemplateGenerator {
                 primaryKeys: tableMetaData.primaryKeys,
                 indexColumns: indexColumns,
                 dataType: dataType,
+                pkg:pkg,
                 comparator: org.codehaus.groovy.grails.scaffolding.DomainClassPropertyComparator.class]
 
         def t = engine.createTemplate(templateText)

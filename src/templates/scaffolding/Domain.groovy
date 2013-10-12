@@ -1,5 +1,6 @@
 <% import org.codehaus.groovy.grails.orm.hibernate.support.ClosureEventTriggeringInterceptor as Events %>
 <% import org.dbunit.dataset.datatype.* %>
+package ${pkg}
 class ${tableName} implements Serializable {
     <%
     def excludedColumns = ['id', 'version']
