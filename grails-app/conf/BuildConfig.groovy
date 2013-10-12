@@ -40,11 +40,14 @@ grails.project.dependency.resolution = {
 		compile 'freemarker:freemarker:2.3.8'
 
 		compile 'org.hibernate:jtidy:r8-20060801'
+
+        compile 'org.dbunit:dbunit:2.4.9'
 	}
 
 	plugins {
 		build(':release:2.1.0', ':rest-client-builder:1.0.2') {
 			export = false
 		}
+
 	}
 }

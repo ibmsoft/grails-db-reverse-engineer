@@ -1,0 +1,8 @@
+<%  if (column.sqlTypeName.equals('varchar') || column.sqlTypeName.equals('char'))
+        out << "String"
+    else if (column.sqlTypeName.equals('int'))
+        out << "Integer"
+    else
+        out << column.sqlTypeName
+
+%>
