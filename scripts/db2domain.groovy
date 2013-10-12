@@ -22,7 +22,7 @@ import java.sql.DriverManager
 
 includeTargets << grailsScript('_GrailsBootstrap')
 
-USAGE = 'grails db-reverse-engineer'
+USAGE = 'grails db2domain 数据库表名'
 
 target(promptForTableName: "指定表名----") {
     if (!args) {
@@ -47,6 +47,7 @@ target(db2domain: 'Reverse-engineers a database and creates domain classes') {
         def driver      = config.dataSource.driverClassName
         def sqlType
         def tableName = args
+        def schema
         if (driver.indexOf("sybase", 1) > 0) {
             sqlType = "sybase"
         } else if (driver.indexOf("mysql", 1) > 0) {
@@ -58,13 +59,13 @@ target(db2domain: 'Reverse-engineers a database and creates domain classes') {
         }
         try {
             Class.forName(driver)
-
             Connection connection = DriverManager.getConnection(databaseUrl, username, password)
             connection.setAutoCommit true
             println connection.toString()
             println("tableName="+Arrays.asList(tableName).toString())
             println("tableName="+tableName)
-            generator.generateDomainClasses(connection,sqlType,'','.',Arrays.asList(tableName))
+            generator.generateDomainClasses(connection,sqlType,'','.',Arrays.asList(tableName),schema)
+//            generator.generateDomainClasses(connection,sqlType,'','.',Arrays.asList(tableName))
             println("sqlType="+sqlType)
 
         } catch (Exception e) {

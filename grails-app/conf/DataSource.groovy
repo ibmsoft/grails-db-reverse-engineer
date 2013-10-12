@@ -2,7 +2,7 @@
 dataSource {
     dbCreate = "update"   // one of 'create', 'create-drop','update'
     driverClassName = "com.sybase.jdbc2.jdbc.SybDriver"
-//            dialect = "org.hibernate.dialect.Sybase11Dialect"
+    dialect = "org.hibernate.dialect.Sybase11Dialect"
     username = "sa"
     password = ""
     url = "jdbc:sybase:Tds:10.68.209.116:5000/sloam"

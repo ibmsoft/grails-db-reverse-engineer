@@ -1,8 +1,66 @@
-<%  if (column.sqlTypeName.equals('varchar') || column.sqlTypeName.equals('char'))
-        out << "String"
-    else if (column.sqlTypeName.equals('int'))
-        out << "Integer"
-    else
-        out << column.sqlTypeName
+<%  if("${column.dataType}" == "CHAR" || "${column.dataType}" == "VARCHAR" || "${column.dataType}" == "LONGVARCHAR")
+        out << renderStringEditor(column)
+    else if("${column.dataType}" =="CLOB")
+        out << renderClobEditor(column)
+    else if("${column.dataType}" =="NUMERIC" ||"${column.dataType}" =="DECIMAL" )
+        out << renderNumberEditor(column)
+    else if("${column.dataType}" =="BOOLEAN")
+        out << renderBooleanEditor(column)
+    else if("${column.dataType}" =="TINYINT" || "${column.dataType}" =="SMALLINT" || "${column.dataType}" =="INTEGER" )
+        out << renderIntegerEditor(column)
+    else if("${column.dataType}" =="BIGINT")
+        out << renderLongEditor(column)
+    else if("${column.dataType}" =="REAL" )
+            out << renderFloatEditor(column)
+    else if("${column.dataType}" == "DOUBLE" || "${column.dataType}" == "FLOAT")
+            out << renderDoubleEditor(column)
+    else if("${column.dataType}" =="Date" )
+            out << renderDateEditor(column)
+    else if("${column.dataType}" =="Time" || "${column.dataType}" == "TIMESTAMP")
+            out << renderTimeDateEditor(column)
+    else if("${column.dataType}" =="BINARY"  || "${column.dataType}" =="VARBINARY"  || "${column.dataType}" =="LONGVARBINARY"   )
+            out << renderBytesEditor(column)
+    else if ("${column.dataType}" == "BLOB")
+            out << renderBlobEditor(column)
+
+     private renderStringEditor(column) {
+        return " String "
+    }
+    private renderNumberEditor(column) {
+        return " Integer "
+    }
+     private renderClobEditor(column) {
+          return " Clob "
+    }
+
+     private renderBooleanEditor(column) {
+          return " int "
+    }
+     private renderIntegerEditor(column) {
+
+        return " Integer "
+    }
+     private renderLongEditor(column) {
+     return " Long "
+
+    }
+     private renderFloatEditor(column) {
+          return " Float "
+    }
+     private renderDoubleEditor(column) {
+             return " Double "
+    }
+     private renderDateEditor(column) {
+         return " Date "
+    }
+     private renderTimeDateEditor(column) {
+         return " Calendar "
+    }
+     private renderBytesEditor(column) {
+         return " byte "
+    }
+     private renderBlobEditor(column) {
+         return " blob "
+    }
 
 %>
