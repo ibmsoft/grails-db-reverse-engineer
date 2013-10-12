@@ -13,8 +13,6 @@
  * limitations under the License.
  */
 
-
-import grails.plugin.reveng.DbunitDatabaseTemplateGenerator
 import grails.util.GrailsUtil
 
 import java.sql.Connection
@@ -37,7 +35,6 @@ target(db2domain: 'Reverse-engineers a database and creates domain classes') {
 	depends compile, packageApp, loadApp,promptForTableName
 
 	try {
-		createConfig()
 
 		def generator = classLoader.loadClass('grails.plugin.reveng.DbunitDatabaseTemplateGenerator').newInstance()
 
@@ -45,6 +42,7 @@ target(db2domain: 'Reverse-engineers a database and creates domain classes') {
         def password    = config.dataSource.password
         def databaseUrl = config.dataSource.url
         def driver      = config.dataSource.driverClassName
+        def packageName = config.grails.plugin.reveng.packageName
         def sqlType
         def tableName = args
         def schema
@@ -61,10 +59,10 @@ target(db2domain: 'Reverse-engineers a database and creates domain classes') {
             Class.forName(driver)
             Connection connection = DriverManager.getConnection(databaseUrl, username, password)
             connection.setAutoCommit true
-            println connection.toString()
+            println "config:"+config
+            println "pkg:"+packageName
             println("tableName="+Arrays.asList(tableName).toString())
-            println("tableName="+tableName)
-            generator.generateDomainClasses(connection,sqlType,'','.',Arrays.asList(tableName),schema)
+            generator.generateDomainClasses(connection,sqlType,packageName,'.',Arrays.asList(tableName),schema)
 //            generator.generateDomainClasses(connection,sqlType,'','.',Arrays.asList(tableName))
             println("sqlType="+sqlType)
 

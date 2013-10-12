@@ -141,6 +141,7 @@ class DbunitDatabaseTemplateGenerator extends DefaultGrailsTemplateGenerator {
         if (tableMetaData.tableName) {
             Dbunitlog.info("Domain generated at ${tableMetaData.tableName}")
             System.out.println("tableName=" + tableMetaData.tableName)
+            println "pkg:"+pkg
 //            def fullName = domainClass.fullName
 //            def pkg = ""
 //            def pos = fullName.lastIndexOf('.')
@@ -149,7 +150,7 @@ class DbunitDatabaseTemplateGenerator extends DefaultGrailsTemplateGenerator {
 //                pkg = fullName[0..pos]
 //            }
 
-            def destFile = new File("${destdir}/grails-app/domain/${tableMetaData.tableName[0] + tableMetaData.tableName[1..-1].toLowerCase()}.groovy")
+            def destFile = new File("${destdir}/grails-app/domain/${pkg?.replaceAll(".","/")}/${tableMetaData.tableName[0] + tableMetaData.tableName[1..-1].toLowerCase()}.groovy")
             if (canWrite(destFile)) {
                 destFile.parentFile.mkdirs()
 
