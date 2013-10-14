@@ -6,17 +6,16 @@ grails.views.gsp.encoding="UTF-8"
 
 
 
-//for codegen
 grails {
     plugin {
         reveng{
-            dataSource.driverClassName = "com.sybase.jdbc2.jdbc.SybDriver"
+            dataSource.driverClassName = "com.sybase.jdbc3.jdbc.SybDriver"
 //            dialect = "org.hibernate.dialect.Sybase11Dialect"
-            dataSource.username = "sa"
-            dataSource.password = ""
-            dataSource.url = "jdbc:sybase:Tds:10.68.209.116:5000/sloam"
+            dataSource.username = "aa"
+            dataSource.password = "bb"
+            dataSource.url = "jdbc:sybase:Tds:100.168.209.116:5000/sloam"
             packageName = 'com.pansoft.module.oa.dict'
-//            url = "jdbc:sybase:Tds:10.68.209.116:5000/sloam?CHARSET_CONVERTER_CLASS=com.sybase.jdbc2.utils.Cp850PureConverter"
+//            url = "jdbc:sybase:Tds:100.168.209.116:5000/sloam?CHARSET_CONVERTER_CLASS=com.sybase.jdbc2.utils.Cp850PureConverter"
         }
     }
 
