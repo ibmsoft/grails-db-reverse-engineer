@@ -4,7 +4,20 @@
 
 使用方法：
 1、执行 install-domain-template
-2、在 databaseSource 中配置数据库连接
-3、在 conifg.groovy 配置 包名称
-4、如果想定制生产的 domain 可以修改 scaffolding目录下的 Domain.groovy 或者 dataType.template
+2、在 conifg.groovy 配置 包名称
+grails {
+    plugin {
+        reveng{
+            dataSource.driverClassName = "com.sybase.jdbc2.jdbc.SybDriver"
+//            dialect = "org.hibernate.dialect.Sybase11Dialect"
+            dataSource.username = "sa"
+            dataSource.password = ""
+            dataSource.url = "jdbc:sybase:Tds:10.68.209.116:5000/sloam"
+            packageName = 'com.pansoft.module.oa.dict'
+//            url = "jdbc:sybase:Tds:10.68.209.116:5000/sloam?CHARSET_CONVERTER_CLASS=com.sybase.jdbc2.utils.Cp850PureConverter"
+        }
+    }
+
+}
+3、如果想定制生产的 domain 可以修改 scaffolding目录下的 Domain.groovy 或者 dataType.template
 

@@ -1,25 +1,20 @@
 package grails.plugin.reveng
 
+import org.apache.commons.logging.Log
+import org.apache.commons.logging.LogFactory
 import org.codehaus.groovy.grails.scaffolding.DefaultGrailsTemplateGenerator
-
-import org.apache.commons.logging.Log;
-
-
-import org.apache.commons.logging.LogFactory;
-
-
-import org.codehaus.groovy.grails.commons.ApplicationHolder
-import java.sql.Connection
 import org.dbunit.database.IDatabaseConnection
-import org.dbunit.ext.mssql.MsSqlConnection
 import org.dbunit.dataset.IDataSet
+import org.dbunit.dataset.ITableMetaData
+import org.dbunit.ext.hsqldb.HsqldbConnection
+import org.dbunit.ext.mssql.MsSqlConnection
 import org.dbunit.ext.mysql.MySqlConnection
 import org.dbunit.ext.oracle.OracleConnection
-import org.dbunit.ext.hsqldb.HsqldbConnection
-import org.dbunit.dataset.ITableMetaData
 
+import java.sql.Connection
 import java.sql.DatabaseMetaData
-import java.sql.ResultSet;
+import java.sql.ResultSet
+
 /**
  * Created by IntelliJ IDEA.
  * User: Administrator

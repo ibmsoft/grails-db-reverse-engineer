@@ -38,10 +38,10 @@ target(db2domain: 'Reverse-engineers a database and creates domain classes') {
 
 		def generator = classLoader.loadClass('grails.plugin.reveng.DbunitDatabaseTemplateGenerator').newInstance()
 
-        def username    = config.dataSource.username
-        def password    = config.dataSource.password
-        def databaseUrl = config.dataSource.url
-        def driver      = config.dataSource.driverClassName
+        def username    = config.grails.plugin.reveng.dataSource.username
+        def password    = config.grails.plugin.reveng.dataSource.password
+        def databaseUrl = config.grails.plugin.reveng.dataSource.url
+        def driver      = config.grails.plugin.reveng.dataSource.driverClassName
         def packageName = config.grails.plugin.reveng.packageName
         def sqlType
         def tableName = args

@@ -23,7 +23,8 @@ class DbReverseEngineerGrailsPlugin {
 
 	List pluginExcludes = [
 		'docs/**',
-		'src/docs/**'
+		'src/docs/**',
+		'web-app/**'
 	]
 
 	String license = 'APACHE'
